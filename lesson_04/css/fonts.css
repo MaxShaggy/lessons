@@ -1,0 +1,15 @@
+@font-face {
+   font-family: "Hangyaboly";
+   font-style: normal;
+   font-weight: 400;
+   font-display: swap;
+   src: url("../fonts/Hangyaboly.woff2") format("woff2");
+}
+
+@font-face {
+   font-family: "Avdira";
+   font-style: normal;
+   font-weight: 400;
+   font-display: swap;
+   src: url("../fonts/Avdira.woff2") format("woff2");
+}
