@@ -131,8 +131,7 @@
 .hydra-contacts .item-03 > a {
    border-right: none;
 }
-.hydra-contacts .item-03 > a > h3 {
-   margin-bottom: 9px;
+.hydra-contacts li > a > h3 {
 }
 .item-01 {
    background: url("../img/location.png") 0 50% no-repeat;
