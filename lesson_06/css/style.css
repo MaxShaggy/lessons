@@ -132,6 +132,7 @@
    border-right: none;
 }
 .hydra-contacts li > a > h3 {
+   margin-bottom: 9px;
 }
 .item-01 {
    background: url("../img/location.png") 0 50% no-repeat;
