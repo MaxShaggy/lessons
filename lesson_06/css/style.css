@@ -22,10 +22,11 @@
    font-size: 14px;
    line-height: 1.5;
    color: #808080;
+   padding: 40px 0;
 }
 .container-descriptions {
    margin: 0 auto;
-   padding: 40px 15px;
+   padding: 0 15px;
    max-width: 648px;
 }
 .container-descriptions p,
@@ -50,14 +51,18 @@
 
 .hydra {
    background-color: #302c42;
+   padding: 40px 0;
 }
 .container-hydra {
    margin: 0 auto;
    max-width: 1272px;
-   padding: 40px 15px;
+   padding: 0 15px;
+}
+.indent {
+   margin-bottom: 50px;
    background:
-      url("../img/top-line.png") -113px 84px no-repeat,
-      url("../img/bottom-line.png") -105px 317px no-repeat;
+      url("../img/top-line.png") -106px 52px no-repeat,
+      url("../img/bottom-line.png") -121px 309px no-repeat;
 }
 .image img {
    width: 524px;
@@ -102,9 +107,6 @@
    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
    display: inline-block;
    padding: 17px 47px 16px 39px;
-}
-.indent {
-   margin-bottom: 50px;
 }
 .hydra-contacts > ul {
    border-radius: 90px;
