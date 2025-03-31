@@ -123,6 +123,7 @@
 }
 .hydra-contacts ul > li {
    display: inline-block;
+   min-height: 70px;
 }
 .hydra-contacts ul > li > a {
    padding: 31px 83px;
