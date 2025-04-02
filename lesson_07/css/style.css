@@ -192,6 +192,14 @@ body {
    padding: 80px;
    background: url("../img/game-header-background.jpg") center center / cover no-repeat;
 }
+.header-game > a {
+   font-size: 25px;
+   color: #ffffff;
+   text-transform: uppercase;
+}
+.header-game > a:hover {
+   color: #f96103;
+}
 .game-container {
    margin: 0 auto;
    max-width: 1200px;
