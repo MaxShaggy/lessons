@@ -1,0 +1,321 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+   font-family: "Inter", sans-serif;
+}
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+
+/* .....HEADER..... */
+
+.header {
+   padding: 30px 0;
+}
+.header-wrap {
+   font-size: 0;
+}
+.header h1,
+.header a {
+   display: inline-block;
+   font-size: 28px;
+   color: #412672;
+   font-weight: 900;
+   text-transform: uppercase;
+}
+.header h1 {
+   width: 90%;
+}
+.header a {
+   width: 10%;
+   text-align: right;
+}
+.header a:hover {
+   color: #6a588c;
+   text-shadow:
+      -2px 0 #412672,
+      0 2px #412672,
+      2px 0 #412672,
+      0 -2px #412672;
+}
+
+/* .....MAIN...... */
+/* .....EDUCATION PART..... */
+
+.container-education {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.education {
+   padding-top: 60px;
+   padding-bottom: 100px;
+   background-color: #412672;
+   font-family: "Inter", sans-serif;
+   color: #ffffff;
+}
+.education-header > h2 {
+   font-size: 38px;
+   line-height: 1.21;
+   margin-bottom: 31px;
+}
+.education-header strong {
+   display: block;
+   font-weight: 700;
+}
+.education-cards {
+   font-size: 0;
+}
+.education-card {
+   max-width: 33.33%;
+   display: inline-block;
+   padding: 0 10px;
+   vertical-align: top;
+}
+.education-card-inner {
+   margin: 0 -10px;
+}
+.education-card-content {
+   background-color: #ffffff;
+   padding: 20px;
+}
+.education-card-content:hover {
+   background-color: #ffbe48;
+   box-shadow:
+      0px 384px 108px 0px rgba(0, 0, 0, 0),
+      0px 246px 98px 0px rgba(0, 0, 0, 0.01),
+      0px 138px 83px 0px rgba(0, 0, 0, 0.05),
+      0px 62px 62px 0px rgba(0, 0, 0, 0.09),
+      0px 15px 34px 0px rgba(0, 0, 0, 0.1);
+}
+.education-card-content > img {
+   max-width: 347px;
+   width: 100%;
+   margin-bottom: 16px;
+}
+.education-card-content > h3 {
+   color: #000000;
+   font-size: 22px;
+   font-weight: 600;
+   margin-bottom: 16px;
+   line-height: 1.22;
+}
+.education-card-content > p {
+   color: #4f4f4f;
+   font-size: 15px;
+   line-height: 1.26;
+   margin-bottom: 16px;
+   min-height: 76px;
+}
+.education-card-content > a {
+   color: #fe3f3f;
+   font-size: 15px;
+   line-height: 1.26;
+}
+.education-card-content a:hover {
+   font-weight: 900;
+   color: #ffffff;
+}
+.education-card-content a:active {
+   font-weight: 900;
+   color: #fe3f3f;
+}
+
+/* .....FACULTY PART..... */
+
+.faculty {
+   font-family: "Inter", sans-serif;
+   color: #412672;
+   padding: 150px 0;
+}
+.container-faculty {
+   max-width: 518px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.faculty-content > h2 {
+   font-size: 34px;
+   line-height: 1.2;
+   margin-bottom: 20px;
+}
+.faculty-content > h2 > strong {
+   display: block;
+   font-weight: 700;
+}
+.faculty-content > p {
+   font-size: 22px;
+   margin-bottom: 20px;
+   line-height: 1.22;
+}
+.faculty-content > ul > li {
+   font-size: 20px;
+   color: #4f4f4f;
+}
+.faculty-content > ul > li:not(:last-child) {
+   margin-bottom: 21px;
+}
+.faculty-content > ul > li::before {
+   content: " ";
+   width: 29px;
+   height: 29px;
+   background-image: url("../img/check.png");
+   display: inline-block;
+   margin-right: 15px;
+   vertical-align: middle;
+}
+.faculty-content > ul > li:hover {
+   color: #fe3f3f;
+}
+.faculty-content > ul > li:hover::before {
+   background-image: url("../img/check-hover.png");
+}
+
+/* .....FOOTER..... */
+
+.footer {
+   padding: 30px 0;
+   background-color: #412672;
+   font-family: "Inter", sans-serif;
+   color: #ffffff;
+   text-transform: uppercase;
+}
+
+/* .....GAME..... */
+
+.header-game,
+.footer-game {
+   padding: 80px;
+   background: url("../img/game-header-background.jpg") center center / cover no-repeat;
+}
+.game-container {
+   margin: 0 auto;
+   max-width: 1200px;
+   padding: 0 15px;
+}
+.main-game {
+   background: url("../img/gaim-main-background.jpg") center / cover no-repeat;
+}
+.game-body {
+   padding: 20px 0;
+   min-height: 1200px;
+   font-size: 0;
+   color: #ffffff;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+.game-body-title {
+   text-align: center;
+   vertical-align: top;
+   margin-bottom: 30px;
+}
+.game-body-title > h1,
+.game-body-title > p {
+   margin-bottom: 10px;
+   font-size: 25px;
+}
+.game-body-title p:first-of-type {
+   margin-bottom: 50px;
+}
+.game-body-title > p:last-child {
+   margin-bottom: 0;
+}
+
+.game-level {
+   text-align: center;
+   visibility: hidden;
+}
+.game-body:hover .game-level > img {
+   visibility: visible;
+}
+.game-level01,
+.game-level02,
+.game-level03,
+.game-level04,
+.game-level05,
+.game-level06,
+.game-level07,
+.game-level08 {
+   background: url("../img/level.png") 0 0 / cover no-repeat;
+   border: 2px solid #ffffff;
+   visibility: hidden;
+}
+.game-level01 {
+   width: 30px;
+   height: 200px;
+   margin-left: 500px;
+}
+.game-level02 {
+   width: 400px;
+   height: 20px;
+   margin-left: 500px;
+}
+.game-level03 {
+   width: 25px;
+   height: 150px;
+   margin-left: 875px;
+}
+.game-level04 {
+   width: 600px;
+   height: 15px;
+   margin-left: 300px;
+}
+.game-level05 {
+   width: 40px;
+   height: 150px;
+   margin-left: 300px;
+}
+.game-level06 {
+   width: 500px;
+   height: 25px;
+   margin-left: 300px;
+}
+.game-level07 {
+   width: 200px;
+   height: 80px;
+   margin-left: 802px;
+   margin-top: -50px;
+   text-align: center;
+   padding: 20px;
+}
+.game-level07 > span {
+   font-size: 30px;
+   color: black;
+}
+.game-level08 {
+   width: 500px;
+   height: 200px;
+   margin-left: 801px;
+   margin-top: -300px;
+   background: url("../img/prize.png") center center / cover no-repeat;
+   text-align: center;
+   padding-top: 20px;
+}
+.game-level08 > span {
+   font-size: 20px;
+   color: #ffffff;
+}
+.game-level:hover ~ .game-level01,
+.game-level01:hover,
+.game-level01:hover ~ .game-level02,
+.game-level02:hover,
+.game-level02:hover ~ .game-level03,
+.game-level03:hover,
+.game-level03:hover ~ .game-level04,
+.game-level04:hover,
+.game-level04:hover ~ .game-level05,
+.game-level05:hover,
+.game-level05:hover ~ .game-level06,
+.game-level06:hover,
+.game-level06:hover ~ .game-level07,
+.game-level07:hover,
+.game-level07:hover ~ .game-level08,
+.game-level08:hover {
+   visibility: visible;
+}
+.footer-game {
+   font-size: 30px;
+   color: #ffffff;
+   text-transform: uppercase;
+}
