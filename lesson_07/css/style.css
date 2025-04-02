@@ -304,19 +304,19 @@ body {
    font-size: 20px;
    color: #ffffff;
 }
-.game-level:hover ~ .game-level01,
+.game-level:hover + .game-level01,
 .game-level01:hover,
-.game-level01:hover ~ .game-level02,
+.game-level01:hover + .game-level02,
 .game-level02:hover,
-.game-level02:hover ~ .game-level03,
+.game-level02:hover + .game-level03,
 .game-level03:hover,
-.game-level03:hover ~ .game-level04,
+.game-level03:hover + .game-level04,
 .game-level04:hover,
-.game-level04:hover ~ .game-level05,
+.game-level04:hover + .game-level05,
 .game-level05:hover,
-.game-level05:hover ~ .game-level06,
+.game-level05:hover + .game-level06,
 .game-level06:hover,
-.game-level06:hover ~ .game-level07,
+.game-level06:hover + .game-level07,
 .game-level07:hover,
 .game-level07:hover ~ .game-level08,
 .game-level08:hover {
