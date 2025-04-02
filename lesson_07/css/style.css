@@ -109,16 +109,16 @@ body {
    margin-bottom: 16px;
    min-height: 76px;
 }
-.education-card-content > a {
+.education-card-content *:last-child {
    color: #fe3f3f;
    font-size: 15px;
    line-height: 1.26;
 }
-.education-card-content a:hover {
+.education-card-content *:last-child:hover {
    font-weight: 900;
    color: #ffffff;
 }
-.education-card-content a:active {
+.education-card-content *:last-child:active {
    font-weight: 900;
    color: #fe3f3f;
 }
@@ -170,6 +170,9 @@ body {
 }
 .faculty-content > ul > li:hover::before {
    background-image: url("../img/check-hover.png");
+}
+.faculty-content > ul > li:nth-child(2):hover {
+   text-decoration: underline;
 }
 
 /* .....FOOTER..... */
@@ -277,10 +280,10 @@ body {
    margin-left: 802px;
    margin-top: -50px;
    text-align: center;
-   padding: 20px;
+   padding: 9px;
 }
 .game-level07 > span {
-   font-size: 30px;
+   font-size: 25px;
    color: black;
 }
 .game-level08 {
