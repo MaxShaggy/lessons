@@ -1,0 +1,80 @@
+@import url("reset.css");
+
+.wrapper {
+   min-height: 100%;
+   overflow: clip;
+}
+.header,
+.footer {
+   background: rgba(18, 11, 11, 0.51);
+   padding: 20px 0;
+   color: #fff;
+   font-family: "Roboto Mono", sans-serif;
+   font-size: 20px;
+}
+.header h1 {
+   font-size: 30px;
+   font-weight: 700;
+}
+.main {
+   background: #413c3c;
+   padding: 40px 0;
+}
+.container {
+   max-width: 1030px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.inner {
+   margin: 0 -20px;
+   font-size: 0;
+}
+.small-pictures {
+   width: 50%;
+   padding: 0 20px;
+   display: inline-block;
+   vertical-align: top;
+   margin-bottom: 30px;
+   text-align: center;
+}
+.list,
+.dpr-format > p,
+.avif-format > p {
+   color: #fff;
+   font-family: "Roboto Mono", sans-serif;
+   font-size: 20px;
+   text-align: center;
+}
+.list {
+   text-align: left;
+   display: inline-block;
+}
+.list > li {
+   margin-bottom: 10px;
+}
+.list > li > img {
+   width: 50px;
+   height: 50px;
+}
+.dpr-format > img,
+.avif-format > picture > img {
+   margin-bottom: 20px;
+}
+.dpr-format {
+   margin-bottom: 40px;
+}
+.avif-format {
+   text-align: center;
+   margin-bottom: 40px;
+}
+.avif-format > picture > img {
+   border-radius: 27% 0px;
+   border: 1px solid #000;
+}
+.avif-format:last-child > picture > img {
+   border-radius: 0;
+   border: none;
+}
+.footer {
+   text-transform: uppercase;
+}
