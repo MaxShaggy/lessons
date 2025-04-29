@@ -24,6 +24,9 @@
 .header__link {
    text-transform: capitalize;
 }
+.header__link:hover {
+   color: #feba57;
+}
 
 /* .....MAIN..... */
 
