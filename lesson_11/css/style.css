@@ -525,7 +525,8 @@
    font-size: 0;
    margin: -30px;
 }
-.transform__box {
+.transform__box,
+.transform__cube {
    display: inline-block;
    vertical-align: top;
    padding: 30px;
@@ -631,4 +632,42 @@
 }
 .card__body:hover .card__front {
    transform: rotateX(-180deg);
+}
+.transform__cube {
+   perspective: 800px;
+}
+.cube__body {
+   width: 225px;
+   height: 225px;
+   transform-style: preserve-3d;
+   position: relative;
+   transition: transform 1s;
+}
+.cube__body > div {
+   position: absolute;
+   inset: 0;
+   opacity: 0.5;
+   border: 6px solid #536b6d;
+   background-color: #feba57;
+}
+.cube__front {
+   transform: translateZ(112.5px);
+}
+.cube__back {
+   transform: rotateY(180deg) translateZ(112.5px);
+}
+.cube__left {
+   transform: rotateY(-90deg) translateZ(112.5px);
+}
+.cube__right {
+   transform: rotateY(90deg) translateZ(112.5px);
+}
+.cube__top {
+   transform: rotateX(90deg) translateZ(112.5px);
+}
+.cube__bottom {
+   transform: rotateX(-90deg) translateZ(112.5px);
+}
+.transform__cube:hover .cube__body {
+   transform: rotate3d(5, 4, 3, 180deg);
 }
