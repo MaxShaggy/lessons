@@ -649,6 +649,13 @@
    opacity: 0.5;
    border: 6px solid #536b6d;
    background-color: #feba57;
+   text-align: center;
+}
+.cube__title {
+   font-size: 35px;
+   font-weight: 700;
+   text-transform: uppercase;
+   line-height: 6;
 }
 .cube__front {
    transform: translateZ(112.5px);
