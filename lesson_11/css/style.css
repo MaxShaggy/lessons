@@ -375,8 +375,8 @@
    background-color: #e25345;
    transform: skewX(-70deg);
    position: absolute;
-   bottom: 3px;
-   left: -39px;
+   bottom: -14px;
+   left: -22px;
    z-index: 14;
 }
 .line__white {
