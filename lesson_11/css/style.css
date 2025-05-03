@@ -37,6 +37,7 @@
 .page__van {
    font-size: 0;
    position: relative;
+   width: 1000px;
 }
 .van__background {
    width: 900px;
@@ -64,7 +65,7 @@
 .van__sun {
    position: absolute;
    top: -300px;
-   right: 520px;
+   right: 183px;
    z-index: 13;
 }
 .sun__border {
@@ -99,7 +100,7 @@
    background-color: #f5eace;
 }
 .body__front {
-   width: 300px;
+   width: 148px;
    height: 300px;
 }
 .front__part-01 {
@@ -306,7 +307,7 @@
 .van__weels {
    position: absolute;
    bottom: -40px;
-   right: 429px;
+   right: 100px;
    z-index: 13;
 }
 .van__weel {
@@ -452,7 +453,7 @@
    background-color: #cfc6ae;
    position: absolute;
    bottom: 22px;
-   right: 403px;
+   right: 250px;
 }
 .door__window {
    height: 50px;
