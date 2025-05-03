@@ -44,7 +44,7 @@
    border-radius: 50%;
    overflow: hidden;
    position: absolute;
-   top: -290px;
+   top: -291px;
    left: 31px;
    z-index: 1;
 }
@@ -179,7 +179,7 @@
 .front__color-lines {
    width: 126px;
    position: absolute;
-   top: 179px;
+   top: 178px;
    right: -61px;
    z-index: 3;
 }
