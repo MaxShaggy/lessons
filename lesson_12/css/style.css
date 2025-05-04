@@ -152,8 +152,8 @@
    50% {
       top: 73px;
       left: 348px;
-      width: 3px;
-      height: 3px;
+      width: 7px;
+      height: 7px;
       opacity: 0;
    }
    55% {
@@ -910,10 +910,13 @@
    width: 68px;
    height: 15px;
    background-color: #e25345;
+   border: 2px solid #e25345;
+   box-shadow: 0px 0px 3px 2px #e25345;
    transform: skewX(-70deg);
+   transform-origin: top right;
    position: absolute;
    bottom: -14px;
-   left: -22px;
+   left: -2px;
    z-index: 14;
    animation-name: shadow-chair;
    animation-duration: 20s;
@@ -925,15 +928,27 @@
    }
    10% {
       transform: skew(-70deg);
+      background-color: #e25345;
+      border: 2px solid #e25345;
+      box-shadow: 0px 0px 3px 2px #e25345;
    }
    40% {
       transform: skew(70deg);
+      background-color: #822e27;
+      border: 2px solid #822e27;
+      box-shadow: 0px 0px 3px 2px #822e27;
    }
    60% {
       transform: skew(70deg);
+      background-color: #822e27;
+      border: 2px solid #822e27;
+      box-shadow: 0px 0px 3px 2px #822e27;
    }
    90% {
       transform: skew(-70deg);
+      background-color: #e25345;
+      border: 2px solid #e25345;
+      box-shadow: 0px 0px 3px 2px #e25345;
    }
    100% {
       transform: skew(-70deg);
@@ -1050,10 +1065,34 @@
    width: 915px;
    height: 25px;
    background-color: #000000;
+   box-shadow: 0px 0px 2px 2px #000000;
    transform: skewX(-70deg);
    position: absolute;
    bottom: -59px;
    left: 40px;
+   animation-name: shadow-van;
+   animation-duration: 20s;
+   animation-iteration-count: infinite;
+}
+@keyframes shadow-van {
+   0% {
+      transform: skew(-70deg);
+   }
+   10% {
+      transform: skew(-70deg);
+   }
+   40% {
+      transform: skew(70deg);
+   }
+   60% {
+      transform: skew(70deg);
+   }
+   90% {
+      transform: skew(-70deg);
+   }
+   100% {
+      transform: skew(-70deg);
+   }
 }
 .center__door {
    height: 220px;
@@ -1087,11 +1126,15 @@
 .cactus {
    font-size: 0;
    position: absolute;
-   bottom: -140px;
+   bottom: -142px;
    left: 493px;
    z-index: 16;
 }
-[class*="__branch"] {
+.van__cactus > .cactus__branch-first,
+.van__cactus > .cactus__branch-second,
+.van__cactus > .cactus__branch-third,
+.van__cactus > .cactus__branch-fourth,
+.van__cactus > .cactus__branch-fifth {
    display: inline-block;
    border: 3px solid #106519;
    background-color: #436e47;
@@ -1155,11 +1198,123 @@
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
 }
-.cactus__shadow {
-   width: 100px;
-   height: 15px;
+.cactus-shadow {
+   display: inline-block;
+   font-size: 0;
+   transform-origin: top right;
+   transform: skewX(70deg);
+   position: absolute;
+   z-index: 20;
+   bottom: -212px;
+   left: 493px;
+   animation-name: cactus-shadow;
+   animation-duration: 20s;
+   animation-iteration-count: infinite;
+}
+.cactus-shadow__branch-first {
+   height: 33px;
+   width: 30px;
+   display: inline-block;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
    background-color: #e25345;
-   transform: skewX(-70deg) translateX(-38px);
+   transform: translateY(-8px);
+}
+.cactus-shadow__branch-second {
+   height: 13px;
+   width: 20px;
+   display: inline-block;
+   background-color: #e25345;
+   border: 2px solid #e25345;
+   box-shadow: 0px 0px 3px 2px #e25345;
+   transform: translateY(-27px);
+}
+.cactus-shadow__branch-third {
+   height: 70px;
+   width: 30px;
+   display: inline-block;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   background-color: #e25345;
+}
+.cactus-shadow__branch-fourth {
+   height: 13px;
+   width: 20px;
+   display: inline-block;
+   background-color: #e25345;
+   border: 2px solid #e25345;
+   box-shadow: 0px 0px 3px 2px #e25345;
+   transform: translateY(-18px);
+}
+.cactus-shadow__branch-fifth {
+   height: 30px;
+   width: 30px;
+   display: inline-block;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   background-color: #e25345;
+   transform: translateY(-2px);
+}
+.cactus-shadow__branch-first,
+.cactus-shadow__branch-second,
+.cactus-shadow__branch-third,
+.cactus-shadow__branch-fourth,
+.cactus-shadow__branch-fifth {
+   animation-name: cactus-shadowcolor;
+   animation-duration: 20s;
+   animation-iteration-count: infinite;
+}
+@keyframes cactus-shadow {
+   0% {
+      transform: skewX(-70deg);
+   }
+   10% {
+      transform: skewX(-70deg);
+   }
+   40% {
+      transform: skewX(70deg);
+   }
+   60% {
+      transform: skewX(70deg);
+   }
+   90% {
+      transform: skewX(-70deg);
+   }
+   100% {
+      transform: skewX(-70deg);
+   }
+}
+@keyframes cactus-shadowcolor {
+   0% {
+      background-color: #e25345;
+      border: 2px solid #e25345;
+      box-shadow: 0px 0px 3px 2px #e25345;
+   }
+   10% {
+      background-color: #e25345;
+      border: 2px solid #e25345;
+      box-shadow: 0px 0px 3px 2px #e25345;
+   }
+   40% {
+      background-color: #822e27;
+      border: 2px solid #822e27;
+      box-shadow: 0px 0px 3px 2px #822e27;
+   }
+   60% {
+      background-color: #822e27;
+      border: 2px solid #822e27;
+      box-shadow: 0px 0px 3px 2px #822e27;
+   }
+   90% {
+      background-color: #e25345;
+      border: 2px solid #e25345;
+      box-shadow: 0px 0px 3px 2px #e25345;
+   }
+   100% {
+      background-color: #e25345;
+      border: 2px solid #e25345;
+      box-shadow: 0px 0px 3px 2px #e25345;
+   }
 }
 
 /* .....Transform..... */
