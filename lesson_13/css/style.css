@@ -15,6 +15,15 @@
    max-width: 1231px;
    padding: 0 15px;
 }
+.header__title {
+   font-size: 38px;
+   color: #fff;
+   margin-bottom: 30px;
+   line-height: 1.2;
+   color: #412672;
+   padding: 30px 0;
+   font-weight: 700;
+}
 .page__team {
    background-color: #412672;
    padding-top: 61px;
