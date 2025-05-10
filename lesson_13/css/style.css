@@ -88,16 +88,12 @@
    color: #fff;
    transition: color 0.5s;
 }
-.faculty__container {
-   max-width: 1573px;
-}
 .faculty__body {
    padding-top: 55px;
    padding-bottom: 72px;
    display: flex;
    gap: 90px;
    flex-wrap: wrap;
-   justify-content: flex-end;
 }
 .faculty__content {
    flex-basis: 518px;
@@ -138,6 +134,9 @@
    background: url("../img/check.svg") 0 0 / 100% no-repeat;
    flex-shrink: 0;
    align-self: flex-start;
+}
+.faculty__img {
+   margin-right: -171px;
 }
 .faculty__img > picture > img {
    max-width: 764px;
