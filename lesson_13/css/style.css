@@ -27,7 +27,6 @@
    line-height: 1.2;
 }
 .team__title > strong {
-   font-weight: 700;
    display: block;
 }
 .team__cards {
@@ -105,7 +104,6 @@
 }
 .faculty__title > strong {
    font-size: 34px;
-   font-weight: 700;
    display: block;
 }
 .faculty__text {
@@ -152,11 +150,7 @@
    flex-wrap: wrap;
 }
 .footer__title {
-   align-self: center;
-}
-.footer__title > strong {
-   font-weight: 700;
-   white-space: nowrap;
+   text-align: center;
 }
 .services__text {
    line-height: 1.2;
