@@ -132,9 +132,6 @@
    flex-shrink: 0;
    align-self: flex-start;
 }
-.faculty__img {
-   margin-right: -171px;
-}
 .faculty__img > picture > img {
    max-width: 764px;
 }
