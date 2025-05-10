@@ -158,6 +158,7 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   min-width: fit-content;
 }
 .footer__services > li {
    display: flex;
