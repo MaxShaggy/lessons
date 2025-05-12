@@ -127,6 +127,9 @@
    gap: 10px;
    align-items: center;
 }
+.faculty__list > li:last-child {
+   margin-bottom: 0;
+}
 .faculty__list > li::before {
    content: "";
    width: 29px;
