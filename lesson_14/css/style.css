@@ -228,9 +228,17 @@ label > span {
    margin-right: 6px;
    max-width: 60px;
 }
+.order-form__product-list > li:not(:last-child) {
+   margin-bottom: 3px;
+}
 .order-form__product-list > li > a:hover {
    color: #00b207;
    transition: color 0.4s;
+}
+.order-form__product-list a:focus-visible {
+   outline: 2px solid #00b307;
+   outline-offset: 4px;
+   border-radius: 4px;
 }
 .order-form__img + span {
    margin-right: 6px;
