@@ -1,0 +1,335 @@
+@import url("reset.css");
+
+.wrapper {
+   min-height: 100%;
+   overflow: clip;
+   display: flex;
+   flex-direction: column;
+}
+.wrapper > main {
+   flex-grow: 1;
+}
+[class*="__container"] {
+   margin: 0 auto;
+   max-width: 1350px;
+   padding: 0 15px;
+}
+body {
+   font-family: "Poppins", sans-serif;
+}
+
+/* .....HEADER..... */
+
+.header,
+.footer {
+   background: url("../img/header-background.avif") center / cover no-repeat;
+}
+.header__body,
+.footer__body {
+   padding: 48px 0;
+   font-size: 16px;
+   color: #999;
+}
+.header__title {
+   font-size: 30px;
+   margin-bottom: 10px;
+}
+.footer__title {
+   font-size: 20px;
+   text-transform: uppercase;
+}
+.header__nav {
+   display: flex;
+   gap: 12px;
+   align-items: center;
+}
+.header__link-home:hover path {
+   stroke: #00b207;
+   transition: 0.5s;
+}
+.header__link-home:hover {
+   color: #00b207;
+   transition: 0.5s;
+}
+.header__link-home > h2 {
+   font-size: 20px;
+}
+
+/* .....FORM..... */
+
+.order-form {
+   display: flex;
+   justify-content: space-between;
+   gap: 24px;
+   flex-wrap: wrap;
+   padding: 32px 0;
+}
+.order-form__row2 {
+   align-self: flex-start;
+}
+
+/* .....Billing Information..... */
+
+.order-form__information {
+   border-bottom: 1px solid #e6e6e6;
+   padding-bottom: 32px;
+}
+.order-form__title {
+   color: #1a1a1a;
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 1.5;
+   margin-bottom: 20px;
+}
+label > span {
+   display: inline-block;
+   font-size: 14px;
+   line-height: 1.5;
+   color: #1a1a1a;
+   margin-bottom: 8px;
+}
+.order-form__field,
+.order-form__select-country,
+.order-form__select-state,
+.order-form__order-notes textarea {
+   padding: 14px 16px;
+   border-radius: 6px;
+   border: 1px solid #e6e6e6;
+   background: #fff;
+   font-size: 16px;
+   line-height: 1.3;
+   color: #999;
+}
+.order-form__field:focus,
+.order-form__select-country:focus,
+.order-form__select-state:focus,
+.order-form__order-notes textarea:focus {
+   border-color: #00b207;
+   outline: none;
+   transition: border-color 0.2s;
+}
+.order-form__company-name > span > span {
+   color: #999;
+}
+.order-form__field:focus,
+[class*="select-"]:focus,
+.order-form__order-notes textarea {
+   color: #1a1a1a;
+}
+.order-form__region,
+.order-form__name,
+.order-form__contacts {
+   display: flex;
+   gap: 16px;
+   justify-content: space-between;
+}
+.order-form__name > label {
+   flex-basis: 280px;
+}
+.order-form__country,
+.order-form__states,
+.order-form__zip-code {
+   flex-basis: 280px;
+   display: flex;
+   flex-direction: column;
+}
+.order-form__contacts > label {
+   flex-basis: 428px;
+}
+.order-form__shipping-toggle {
+   display: inline-flex;
+   gap: 6px;
+   flex-direction: row-reverse;
+}
+.order-form__shipping-toggle > span {
+   color: #4d4d4d;
+   margin-bottom: 0;
+}
+.order-form__field-checkbox[type="checkbox"] {
+   appearance: none;
+   width: 20px;
+   height: 20px;
+   border-radius: 3px;
+   border: 1px solid #e6e6e6;
+   background-color: #fff;
+   cursor: pointer;
+   position: relative;
+   transition: all 0.3s;
+}
+.order-form__field-checkbox[type="checkbox"]:hover {
+   border-color: #00b307;
+   transition: border-color 0.3s;
+}
+.order-form__field-checkbox:focus-visible {
+   border-color: #00b307;
+   outline: none;
+}
+.order-form__field-checkbox[type="checkbox"]::after {
+   content: "";
+   position: absolute;
+   top: 3px;
+   left: 6px;
+   width: 7px;
+   height: 10px;
+   border: solid transparent;
+   border-width: 0 3px 3px 0;
+   transform: rotate(45deg);
+   display: none;
+}
+.order-form__field-checkbox[type="checkbox"]:checked::after {
+   display: block;
+   border-color: #fff;
+}
+.order-form__field-checkbox[type="checkbox"]:checked {
+   background-color: #00b207;
+}
+
+/* .....Additional Info..... */
+
+.order-form__order-notes textarea {
+   resize: none;
+   min-height: 100px;
+}
+.order-form__information--border-none {
+   border-bottom: none;
+   padding-top: 32px;
+   padding-bottom: 0;
+}
+.order-form__information > [class*="order-form__"]:not(:last-child) {
+   margin-bottom: 16px;
+}
+
+/* .....Order Summery..... */
+
+.order-form__title--font-size {
+   font-size: 20px;
+}
+.order-form__checkout {
+   padding: 24px;
+   border-radius: 8px;
+   border: 1px solid #e6e6e6;
+   background: #fff;
+   font-size: 14px;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+.order-form__product-list > li {
+   display: flex;
+   justify-content: space-between;
+   gap: 16px;
+   line-height: 1.5;
+}
+.order-form__summa {
+   align-self: center;
+   font-weight: 500;
+}
+.order-form__img {
+   margin-right: 6px;
+   max-width: 60px;
+}
+.order-form__product-list > li > a:hover {
+   color: #00b207;
+   transition: color 0.4s;
+}
+.order-form__img + span {
+   margin-right: 6px;
+   transition: color 0.4s;
+}
+.order-form__subtotal,
+.order-form__shipping,
+.order-form__total {
+   padding: 12px;
+   border-bottom: 1px solid #e6e6e6;
+   display: flex;
+   justify-content: space-between;
+   gap: 16px;
+}
+.order-form__total {
+   padding-bottom: 0;
+   border-bottom: none;
+}
+.order-form__subtotal > span:first-child,
+.order-form__shipping > span:first-child {
+   line-height: 1.5;
+   color: #4d4d4d;
+}
+.order-form__subtotal > span:last-child,
+.order-form__shipping > span:last-child {
+   line-height: 1.5;
+   color: #1a1a1a;
+   font-weight: 500;
+}
+.order-form__total > span:first-child {
+   font-size: 16px;
+   color: #4d4d4d;
+}
+.order-form__total > span:last-child {
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 1.2;
+   color: #1a1a1a;
+}
+.payment-list__item {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: flex-end;
+   gap: 6px;
+}
+.payment-list__item > span {
+   color: #4d4d4d;
+   margin-bottom: 10px;
+}
+.payment-list__item > input[type="radio"] {
+   appearance: none;
+   width: 20px;
+   height: 20px;
+   border: 1px solid #cccccc;
+   border-radius: 50%;
+   cursor: pointer;
+   position: relative;
+}
+.payment-list__item > input[type="radio"] {
+   transition: border-color 0.3s;
+}
+.payment-list__item > input[type="radio"]:checked::before {
+   content: "";
+   position: absolute;
+   top: 3px;
+   left: 3px;
+   width: 12px;
+   height: 12px;
+   background-color: #00b307;
+   border-radius: 50%;
+}
+.payment-list__item > input[type="radio"]:checked {
+   border-color: #00b307;
+}
+.payment-list__item > input[type="radio"]:hover {
+   border-color: #00b307;
+   transition: border-color 0.3s;
+}
+.order-form__button {
+   padding: 16px 0;
+   background-color: #00b207;
+   border-radius: 43px;
+   transition: all 0.4s;
+}
+.order-form__button > span {
+   font-size: 16px;
+   font-weight: 600;
+   color: #fff;
+}
+.order-form__button:hover {
+   background-color: #2c742f;
+   transition: background-color 0.4s;
+}
+.order-form__button:active {
+   background-color: #fff;
+   border: 2px solid #2c742f;
+   transition: all 0.3s;
+}
+.order-form__button:active > span {
+   color: #2c742f;
+   transition: color 0.3s;
+}

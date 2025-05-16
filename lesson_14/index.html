@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Homework-14</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <div class="header__body">
+               <h1 class="header__title">Homework-14</h1>
+               <ul class="header__nav">
+                  <li>
+                     <a class="header__link-home" href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                           <path d="M4 10L12 3L20 10V20H15V16C15 15.2044 14.6839 14.4413 14.1213 13.8787C13.5587 13.3161 12.7956 13 12 13C11.2043 13 10.4413 13.3161 9.87868 13.8787C9.31607 14.4413 9 15.2044 9 16V20H4V10Z" stroke="#808080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="7.8" height="13" viewBox="0 0 6 10" fill="none">
+                        <path d="M1 0.916676L5.08333 5.00001L1 9.08334" stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </li>
+                  <li>
+                     <a class="header__link-home" href="#" target="_blank">
+                        <h2>Homework-14</h2>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </header>
+      <main class="page">
+         <div class="page__container">
+            <form class="page__order-form order-form" method="post" action="#" enctype="multipart/form-data">
+               <div class="order-form__row">
+                  <div class="order-form__information">
+                     <h2 class="order-form__title">Billing Information</h2>
+                     <div class="order-form__name">
+                        <label class="order-form__first-name">
+                           <span>First name</span>
+                           <input class="order-form__field" placeholder="Your first name" name="form[]" type="text" maxlength="25" required>
+                        </label>
+                        <label class="order-form__last-name">
+                           <span>Last name</span>
+                           <input class="order-form__field" placeholder="Your last name" name="form[]" type="text" maxlength="25" required>
+                        </label>
+                        <label class="order-form__company-name">
+                           <span>Company Name <span>(optional)</span></span>
+                           <input class="order-form__field" placeholder="Company name" name="form[]" type="text" maxlength="25" required>
+                        </label>
+                     </div>
+                     <div class="order-form__adress">
+                        <label class="order-form__street-adress">
+                           <span>Street Address</span>
+                           <input class="order-form__field" placeholder="Street Address" name="form[]" type="text" maxlength="50" required>
+                        </label>
+                     </div>
+                     <div class="order-form__region">
+                        <label class="order-form__country">
+                           <span>Country / Region</span>
+                           <select class="order-form__select-country" name="form[]" required>
+                              <option value="" disabled selected hidden>Select Country</option>
+                              <option value="us">United States</option>
+                              <option value="de">Germany</option>
+                              <option value="jp">Japan</option>
+                           </select>
+                        </label>
+                        <label class="order-form__states">
+                           <span>States</span>
+                           <select class="order-form__select-state" name="form[]" required>
+                              <option value="" disabled selected hidden>Select State</option>
+                              <option value="ca">California</option>
+                              <option value="ny">New York</option>
+                              <option value="tx">Texas</option>
+                           </select>
+                        </label>
+                        <label class="order-form__zip-code">
+                           <span>Zip Code</span>
+                           <input class="order-form__field" placeholder="Zip Code" name="form[]" type="text" maxlength="15" required>
+                        </label>
+                     </div>
+                     <div class="order-form__contacts">
+                        <label class="order-form__email">
+                           <span>Email</span>
+                           <input class="order-form__field" placeholder="Email Address" name="form[]" type="email" maxlength="15" required>
+                        </label>
+                        <label class="order-form__phone">
+                           <span>Phone</span>
+                           <input class="order-form__field" placeholder="Phone number" name="form[]" type="tel" maxlength="15" required>
+                        </label>
+                     </div>
+                     <div class="order-form__shipping-option">
+                        <label class="order-form__shipping-toggle">
+                           <span>Ship to a different address</span>
+                           <input class="order-form__field-checkbox" name="form[]" type="checkbox">
+                        </label>
+                     </div>
+                  </div>
+                  <div class="order-form__information order-form__information--border-none">
+                     <h2 class="order-form__title">Additional Info</h2>
+                     <div class="order-form__notes">
+                        <label class="order-form__order-notes">
+                           <span>Order Notes (Optional)</span>
+                           <textarea name="form[]" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+               <div class="order-form__row2">
+                  <div class="order-form__checkout">
+                     <div class="order-form__summery">
+                        <h2 class="order-form__title order-form__title--font-size">Order Summery</h2>
+                        <ul class="order-form__product-list">
+                           <li>
+                              <a href="#" target="_blank">
+                                 <img class="order-form__img" src="img/form-icon01.avif" alt="Green Capsicum" title="Green Capsicum">
+                                 <span>Green Capsicum</span>
+                                 <span>x5</span>
+                              </a>
+                              <span class="order-form__summa">$70.00</span>
+                           </li>
+                           <li>
+                              <a href="#" target="_blank">
+                                 <img class="order-form__img" src="img/form-icon02.avif" alt="Red Capsicum" title="Red Capsicum">
+                                 <span>Red Capsicum</span>
+                                 <span>x1</span>
+                              </a>
+                              <span class="order-form__summa">$14.00</span>
+                           </li>
+                        </ul>
+                        <div class="order-form__subtotal">
+                           <span>Subtotal:</span>
+                           <span>$84.00</span>
+                        </div>
+                        <div class="order-form__shipping">
+                           <span>Shipping:</span>
+                           <span>Free</span>
+                        </div>
+                        <div class="order-form__total">
+                           <span>Total:</span>
+                           <span>$84.00</span>
+                        </div>
+                     </div>
+                     <div class="order-form__payment-method">
+                        <h2 class="order-form__title order-form__title--font-size">Payment Method</h2>
+                        <ul class="order-form__payment-list payment-list">
+                           <li>
+                              <label class="payment-list__item">
+                                 <span>Cash on Delivery</span>
+                                 <input type="radio" name="form[payment]" checked>
+                              </label>
+                           </li>
+                           <li>
+                              <label class="payment-list__item">
+                                 <span>Paypal</span>
+                                 <input type="radio" name="form[payment]">
+                              </label>
+                           </li>
+                           <li>
+                              <label class="payment-list__item">
+                                 <span>Amazon Pay</span>
+                                 <input type="radio" name="form[payment]">
+                              </label>
+                           </li>
+                        </ul>
+                     </div>
+                     <button class="order-form__button" type="submit">
+                        <span>Place Order</span>
+                     </button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__body">
+               <h2 class="footer__title">Made By Max</h2>
+            </div>
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>
