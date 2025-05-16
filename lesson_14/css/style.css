@@ -352,3 +352,7 @@ input[type="radio"]:focus {
    color: #2c742f;
    transition: color 0.3s;
 }
+.order-form__button:focus-visible {
+   outline: 3px solid #00b207;
+   outline-offset: 2px;
+}
