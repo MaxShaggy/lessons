@@ -198,6 +198,9 @@ label > span {
 .order-form__information > [class*="order-form__"]:not(:last-child) {
    margin-bottom: 16px;
 }
+.order-form__order-notes > span > span {
+   color: #999;
+}
 
 /* .....Order Summery..... */
 
