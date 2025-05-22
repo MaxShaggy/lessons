@@ -157,10 +157,12 @@ body {
 }
 .card__busket {
    align-self: center;
+   will-change: transform;
    transition: background-color 0.5s ease;
 }
 .card__busket svg {
    color: #1a1a1a;
+   will-change: transform;
    transition: color 0.5s ease;
 }
 .card__additional-info {
@@ -190,6 +192,7 @@ body {
 .additional-info__icon-eye {
    background-color: #fff;
    border: 1px solid #f2f2f2;
+   will-change: transform;
    opacity: 0;
    visibility: hidden;
    transition: all 0.5s ease;
