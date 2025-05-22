@@ -101,6 +101,12 @@ label > span {
    color: #999;
    transition: border-color 0.3s;
 }
+.order-form__field:valid,
+.order-form__select-country:valid,
+.order-form__select-state:valid,
+.order-form__order-notes textarea:valid {
+   color: #1a1a1a;
+}
 .order-form__field:hover,
 .order-form__select-country:hover,
 .order-form__select-state:hover,
@@ -292,9 +298,11 @@ label > span {
    justify-content: flex-end;
    gap: 6px;
 }
+.order-form__payment-list > li {
+   margin-bottom: 10px;
+}
 .payment-list__item > span {
    color: #4d4d4d;
-   margin-bottom: 10px;
 }
 .payment-list__item > input[type="radio"] {
    appearance: none;
@@ -329,7 +337,7 @@ input[type="radio"]:focus {
    outline: 3px solid #00b207;
 }
 .order-form__button {
-   padding: 16px 0;
+   padding: 16px 30px;
    background-color: #00b207;
    border-radius: 43px;
    transition: all 0.4s;
