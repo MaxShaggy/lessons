@@ -176,7 +176,7 @@ body {
       top: 85px;
       left: -100%;
       z-index: 4;
-      background-color: #f5f7ff;
+      background-color: #f5f7ffc7;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -186,6 +186,7 @@ body {
       color: #5d6491;
       overflow: auto;
       transition: all 0.5s ease-in;
+      font-weight: 700;
    }
    .header__menu > li:nth-last-child(2) {
       margin-bottom: 30px;
@@ -197,7 +198,6 @@ body {
       display: none;
    }
    .header__button.header__button--display-none {
-      display: inline-block;
       padding: 10px 30px;
       font-size: 20px;
       display: flex;
@@ -227,5 +227,81 @@ body {
       bottom: 50%;
       transform: rotate(45deg) translateY(1px);
       transition: all 0.4s ease;
+   }
+}
+
+/* .....MAIN..... */
+
+.page {
+   background: url("../img/main/main-background.avif") center / cover no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.page__title {
+   font-size: 40px;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   line-height: 1.5;
+   text-transform: uppercase;
+}
+.menu-open .page__title {
+   display: none;
+}
+
+@media (max-width: 554px) {
+   .page__title {
+      font-size: 30px;
+   }
+}
+
+/* .....FOOTER..... */
+
+.footer__container {
+   max-width: 1118px;
+}
+.footer__body {
+   padding-top: 49px;
+   padding-bottom: 54px;
+   padding-top: 49px;
+   padding-bottom: 54px;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+.footer__body > span {
+   align-self: center;
+}
+.footer__list-logo {
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+   flex-wrap: wrap;
+}
+.footer__list-logo > li {
+   perspective: 400px;
+   perspective-origin: center;
+}
+@media (any-hover: hover) {
+   .footer__list-logo > li:hover a {
+      transform: rotate3d(0, 60, 0, 360deg);
+      transition: transform 1.3s ease;
+   }
+}
+@media (max-width: 1005px) {
+   .footer__list-logo {
+      justify-content: center;
+   }
+   .footer__body {
+      padding-top: 10px;
+      padding-bottom: 10px;
+   }
+}
+@media (max-width: 624px) {
+   .footer__list-logo img:last-child {
+      display: none;
    }
 }
