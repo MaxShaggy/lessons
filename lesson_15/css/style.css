@@ -316,6 +316,9 @@ body {
    .additional-info__icon-eye {
       border: 4px solid #00b207;
    }
+   .card__busket {
+      margin-right: 6px;
+   }
 }
 @media (max-width: 401.98px) {
    .icon > svg {
@@ -496,5 +499,11 @@ body {
    .news__items {
       justify-content: center;
       gap: 12px;
+   }
+   .post-meta__item > span {
+      font-size: 14px;
+   }
+   .post-meta__item {
+      gap: 3px;
    }
 }
