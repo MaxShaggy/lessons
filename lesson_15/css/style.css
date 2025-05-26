@@ -420,7 +420,7 @@ body {
 }
 .item__post-meta {
    display: flex;
-   justify-content: space-between;
+   justify-content: flex-start;
    gap: 16px;
 }
 .post-meta__item {
@@ -468,7 +468,7 @@ body {
       gap: 8px;
    }
    .post-meta__item > span {
-      font-size: 10px;
+      font-size: 12px;
    }
    .item__title {
       font-size: 16px;
@@ -484,6 +484,17 @@ body {
       flex: 0 1 calc(100% / 2 - ((24px * (2 - 1)) / 2));
    }
 }
+@media (max-width: 665px) {
+   .item__info {
+      padding: 10px;
+   }
+   .post-meta__item > span {
+      font-size: 10px;
+   }
+   .item__post-meta {
+      gap: 8px;
+   }
+}
 @media (max-width: 545px) {
    .page__news {
       padding: 15px 0 15px 0;
@@ -493,9 +504,6 @@ body {
    }
    .post-meta__item {
       gap: 0px;
-   }
-   .item__post-meta {
-      gap: 5px;
    }
 }
 @media (max-width: 495px) {
