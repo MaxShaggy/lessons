@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Carme:wght@400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Homework-15</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container"></div>
+      </header>
+      <main class="page">
+         <div class="page__featured featured">
+            <div class="featured__container">
+               <div class="featured__block-title">
+                  <a class="featured__link-title" href="#" target="_blank">Products</a>
+                  <h2 class="featured__title">Our Featured Products</h2>
+               </div>
+               <div class="featured__products card">
+                  <div class="card__item-discount discount">
+                     <a class="discount__link" href="#" target="_blank">
+                        <picture class="discount__pic">
+                           <source src="img/featured/summer-sale.avif" type="image/avif">
+                           <img src="img/featured/summer-sale.jpg" alt="discounts on products during summer sale">
+                        </picture>
+                     </a>
+                     <div class="discount__body">
+                        <span class="discount__text">Summer Sale</span>
+                        <span class="discount__size">75% off</span>
+                        <button class="discount__button" type="button">
+                           <span>Shop Now</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 15" fill="none">
+                              <path d="M16 7.50049H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M9.94995 1.47559L16 7.49959L9.94995 13.5246" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="card__item">
+                     <div class="card__pic">
+                        <a class="card__link-pic" href="#" target="_blank">
+                           <picture>
+                              <source srcset="img/featured/cabbage.avif" type="image/avif">
+                              <img src="img/featured/cabbage.jpg" alt="fresh chanise cabbage" title="fresh chanise cabbage">
+                           </picture>
+                        </a>
+                     </div>
+                     <div class="card__info">
+                        <div class="card__text">
+                           <h3 class="card__title"><a href="#" target="_blank">Chanise Cabbage</a></h3>
+                           <div class="card__price">
+                              <span>$14.99</span>
+                           </div>
+                           <div class="card__rating">
+                              <img src="img/icons-featured/stars.svg" alt="rating stars">
+                           </div>
+                        </div>
+                        <button class="card__cart icon" type="button">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                              <path d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </button>
+                     </div>
+                     <div class="card__additional-info additional-info">
+                        <div class="additional-info__sale additional-info__sale--hidden">
+                           <span>Sale</span>
+                           <span>50%</span>
+                        </div>
+                        <div class="additional-info__icons">
+                           <a class="additional-info__icon-heart icon" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                 <path d="M9.9996 17.5453C-6.66672 8.33354 4.99993 -1.66646 9.9996 4.65692C14.9999 -1.66646 26.6666 8.33354 9.9996 17.5453Z" stroke="currentColor" stroke-width="1.5" />
+                              </svg>
+                           </a>
+                           <a class="additional-info__icon-eye icon" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                 <path d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card__item">
+                     <div class="card__pic">
+                        <a class="card__link-pic" href="#" target="_blank">
+                           <picture>
+                              <source srcset="img/featured/lettuce.avif" type="image/avif">
+                              <img src="img/featured/lettuce.jpg" alt="fresh green lettuce" title="fresh green lettuce">
+                           </picture>
+                        </a>
+                     </div>
+                     <div class="card__info">
+                        <div class="card__text">
+                           <h3 class="card__title"><a href="#" target="_blank">Green Lettuce</a></h3>
+                           <div class="card__price">
+                              <span>$14.99</span>
+                           </div>
+                           <div class="card__rating">
+                              <img src="img/icons-featured/stars.svg" alt="rating stars">
+                           </div>
+                        </div>
+                        <button class="card__cart icon" type="button">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                              <path d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </button>
+                     </div>
+                     <div class="card__additional-info additional-info">
+                        <div class="additional-info__sale additional-info__sale--hidden">
+                           <span>Sale</span>
+                           <span>50%</span>
+                        </div>
+                        <div class="additional-info__icons">
+                           <a class="additional-info__icon-heart icon" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                 <path d="M9.9996 17.5453C-6.66672 8.33354 4.99993 -1.66646 9.9996 4.65692C14.9999 -1.66646 26.6666 8.33354 9.9996 17.5453Z" stroke="currentColor" stroke-width="1.5" />
+                              </svg>
+                           </a>
+                           <a class="additional-info__icon-eye icon" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                 <path d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card__item">
+                     <div class="card__pic">
+                        <a class="card__link-pic" href="#" target="_blank">
+                           <picture>
+                              <source srcset="img/featured/green-chili.avif" type="image/avif">
+                              <img src="img/featured/green-chili.jpg" alt="fresh green chili" title="fresh green chili">
+                           </picture>
+                        </a>
+                     </div>
+                     <div class="card__info">
+                        <div class="card__text">
+                           <h3 class="card__title"><a href="#" target="_blank">Green Chili</a></h3>
+                           <div class="card__price">
+                              <span>$14.99</span>
+                           </div>
+                           <div class="card__rating">
+                              <img src="img/icons-featured/stars.svg" alt="rating stars">
+                           </div>
+                        </div>
+                        <button class="card__cart icon" type="button">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                              <path d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </button>
+                     </div>
+                     <div class="card__additional-info additional-info">
+                        <div class="additional-info__sale additional-info__sale--hidden">
+                           <span>Sale</span>
+                           <span>50%</span>
+                        </div>
+                        <div class="additional-info__icons">
+                           <a class="additional-info__icon-heart icon" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                 <path d="M9.9996 17.5453C-6.66672 8.33354 4.99993 -1.66646 9.9996 4.65692C14.9999 -1.66646 26.6666 8.33354 9.9996 17.5453Z" stroke="currentColor" stroke-width="1.5" />
+                              </svg>
+                           </a>
+                           <a class="additional-info__icon-eye icon" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                 <path d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card__item">
+                     <div class="card__pic">
+                        <a class="card__link-pic" href="#" target="_blank">
+                           <picture>
+                              <source srcset="img/featured/corn.avif" type="image/avif">
+                              <img src="img/featured/corn.jpg" alt="fresh corn" title="fresh corn">
+                           </picture>
+                        </a>
+                     </div>
+                     <div class="card__info">
+                        <div class="card__text">
+                           <h3 class="card__title"><a href="#" target="_blank">Corn</a></h3>
+                           <div class="card__price">
+                              <span>$14.99</span>
+                           </div>
+                           <div class="card__rating">
+                              <img src="img/icons-featured/stars.svg" alt="rating stars">
+                           </div>
+                        </div>
+                        <button class="card__cart icon" type="button">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                              <path d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </button>
+                     </div>
+                     <div class="card__additional-info additional-info">
+                        <div class="additional-info__sale additional-info__sale--hidden">
+                           <span>Sale</span>
+                           <span>50%</span>
+                        </div>
+                        <div class="additional-info__icons">
+                           <a class="additional-info__icon-heart icon" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                 <path d="M9.9996 17.5453C-6.66672 8.33354 4.99993 -1.66646 9.9996 4.65692C14.9999 -1.66646 26.6666 8.33354 9.9996 17.5453Z" stroke="currentColor" stroke-width="1.5" />
+                              </svg>
+                           </a>
+                           <a class="additional-info__icon-eye icon" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                 <path d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="featured__container">
+               <div class="featured__highlights">
+                  <div class="featured__column card">
+                     <h3 class="card__highlights-title">Hot Deals</h3>
+                     <div class="card__item card__item--small-card">
+                        <div class="card__pic card__pic--small-card">
+                           <a class="card__link-pic" href="#" target="_blank">
+                              <picture>
+                                 <source srcset="img/featured/apple.avif" type="image/avif">
+                                 <img src="img/featured/apple.jpg" alt="fresh green apple" title="fresh green apple">
+                              </picture>
+                           </a>
+                        </div>
+                        <div class="card__info card__info--small-card">
+                           <div class="card__text">
+                              <h3 class="card__title card__title--small-card"><a href="#" target="_blank">Green Apple</a></h3>
+                              <div class="card__price">
+                                 <span>$14.99</span>
+                              </div>
+                              <div class="card__rating">
+                                 <img src="img/icons-featured/stars.svg" alt="rating stars">
+                              </div>
+                           </div>
+                           <div class="card__additional additional-info">
+                              <button class="additional-info__icon-cart icon" type="button">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                    <path d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </button>
+                              <a class="additional-info__icon-heart icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M9.9996 17.5453C-6.66672 8.33354 4.99993 -1.66646 9.9996 4.65692C14.9999 -1.66646 26.6666 8.33354 9.9996 17.5453Z" stroke="currentColor" stroke-width="1.5" />
+                                 </svg>
+                              </a>
+                              <a class="additional-info__icon-eye icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card__item card__item--small-card">
+                        <div class="card__pic card__pic--small-card">
+                           <a class="card__link-pic" href="#" target="_blank">
+                              <picture>
+                                 <source srcset="img/featured/orange.avif" type="image/avif">
+                                 <img src="img/featured/orange.jpg" alt="fresh orange" title="fresh orange">
+                              </picture>
+                           </a>
+                        </div>
+                        <div class="card__info card__info--small-card">
+                           <div class="card__text">
+                              <h3 class="card__title card__title--small-card"><a href="#" target="_blank">Indian Malta</a></h3>
+                              <div class="card__price">
+                                 <span>$14.99</span>
+                              </div>
+                              <div class="card__rating">
+                                 <img src="img/icons-featured/stars.svg" alt="rating stars">
+                              </div>
+                           </div>
+                           <div class="card__additional additional-info">
+                              <button class="additional-info__icon-cart icon" type="button">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                    <path d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </button>
+                              <a class="additional-info__icon-heart icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M9.9996 17.5453C-6.66672 8.33354 4.99993 -1.66646 9.9996 4.65692C14.9999 -1.66646 26.6666 8.33354 9.9996 17.5453Z" stroke="currentColor" stroke-width="1.5" />
+                                 </svg>
+                              </a>
+                              <a class="additional-info__icon-eye icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card__item card__item--small-card">
+                        <div class="card__pic card__pic--small-card">
+                           <a class="card__link-pic" href="#" target="_blank">
+                              <picture>
+                                 <source srcset="img/featured/lettuce.avif" type="image/avif">
+                                 <img src="img/featured/lettuce.jpg" alt="fresh green lettuce" title="fresh green lettuce">
+                              </picture>
+                           </a>
+                        </div>
+                        <div class="card__info card__info--small-card">
+                           <div class="card__text">
+                              <h3 class="card__title card__title--small-card"><a href="#" target="_blank">Green Lettuce</a></h3>
+                              <div class="card__price">
+                                 <span>$14.99</span>
+                              </div>
+                              <div class="card__rating">
+                                 <img src="img/icons-featured/stars.svg" alt="rating stars">
+                              </div>
+                           </div>
+                           <div class="card__additional additional-info">
+                              <button class="additional-info__icon-cart icon" type="button">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                    <path d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </button>
+                              <a class="additional-info__icon-heart icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M9.9996 17.5453C-6.66672 8.33354 4.99993 -1.66646 9.9996 4.65692C14.9999 -1.66646 26.6666 8.33354 9.9996 17.5453Z" stroke="currentColor" stroke-width="1.5" />
+                                 </svg>
+                              </a>
+                              <a class="additional-info__icon-eye icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="featured__column card">
+                     <h3 class="card__highlights-title">Best Seller</h3>
+                     <div class="card__item card__item--small-card">
+                        <div class="card__pic card__pic--small-card">
+                           <a class="card__link-pic" href="#" target="_blank">
+                              <picture>
+                                 <source srcset="img/featured/eggplant.avif" type="image/avif">
+                                 <img src="img/featured/eggplant.jpg" alt="fresh eggplant" title="fresh eggplant">
+                              </picture>
+                           </a>
+                        </div>
+                        <div class="card__info card__info--small-card">
+                           <div class="card__text">
+                              <h3 class="card__title card__title--small-card"><a href="#" target="_blank">Eggplant</a></h3>
+                              <div class="card__price">
+                                 <span>$14.99</span>
+                              </div>
+                              <div class="card__rating">
+                                 <img src="img/icons-featured/stars.svg" alt="rating stars">
+                              </div>
+                           </div>
+                           <div class="card__additional additional-info">
+                              <button class="additional-info__icon-cart icon" type="button">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                    <path d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </button>
+                              <a class="additional-info__icon-heart icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M9.9996 17.5453C-6.66672 8.33354 4.99993 -1.66646 9.9996 4.65692C14.9999 -1.66646 26.6666 8.33354 9.9996 17.5453Z" stroke="currentColor" stroke-width="1.5" />
+                                 </svg>
+                              </a>
+                              <a class="additional-info__icon-eye icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card__item card__item--small-card">
+                        <div class="card__pic card__pic--small-card">
+                           <a class="card__link-pic" href="#" target="_blank">
+                              <picture>
+                                 <source srcset="img/featured/red-capsicum.avif" type="image/avif">
+                                 <img src="img/featured/red-capsicum.jpg" alt="fresh red capsicum" title="fresh red capsicum">
+                              </picture>
+                           </a>
+                        </div>
+                        <div class="card__info card__info--small-card">
+                           <div class="card__text">
+                              <h3 class="card__title card__title--small-card"><a href="#" target="_blank">Red Capsicum</a></h3>
+                              <div class="card__price">
+                                 <span>$14.99</span>
+                              </div>
+                              <div class="card__rating">
+                                 <img src="img/icons-featured/stars.svg" alt="rating stars">
+                              </div>
+                           </div>
+                           <div class="card__additional additional-info">
+                              <button class="additional-info__icon-cart icon" type="button">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                    <path d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </button>
+                              <a class="additional-info__icon-heart icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M9.9996 17.5453C-6.66672 8.33354 4.99993 -1.66646 9.9996 4.65692C14.9999 -1.66646 26.6666 8.33354 9.9996 17.5453Z" stroke="currentColor" stroke-width="1.5" />
+                                 </svg>
+                              </a>
+                              <a class="additional-info__icon-eye icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card__item card__item--small-card">
+                        <div class="card__pic card__pic--small-card">
+                           <a class="card__link-pic" href="#" target="_blank">
+                              <picture>
+                                 <source srcset="img/featured/red-tomatos.avif" type="image/avif">
+                                 <img src="img/featured/red-tomatos.jpg" alt="fresh red tomatos" title="fresh red tomatos">
+                              </picture>
+                           </a>
+                        </div>
+                        <div class="card__info card__info--small-card">
+                           <div class="card__text">
+                              <h3 class="card__title card__title--small-card"><a href="#" target="_blank">Red Tomatos</a></h3>
+                              <div class="card__price">
+                                 <span>$14.99</span>
+                              </div>
+                              <div class="card__rating">
+                                 <img src="img/icons-featured/stars.svg" alt="rating stars">
+                              </div>
+                           </div>
+                           <div class="card__additional additional-info">
+                              <button class="additional-info__icon-cart icon" type="button">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                    <path d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </button>
+                              <a class="additional-info__icon-heart icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M9.9996 17.5453C-6.66672 8.33354 4.99993 -1.66646 9.9996 4.65692C14.9999 -1.66646 26.6666 8.33354 9.9996 17.5453Z" stroke="currentColor" stroke-width="1.5" />
+                                 </svg>
+                              </a>
+                              <a class="additional-info__icon-eye icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="featured__column card">
+                     <h3 class="card__highlights-title">Top Rated</h3>
+                     <div class="card__item card__item--small-card">
+                        <div class="card__pic card__pic--small-card">
+                           <a class="card__link-pic" href="#" target="_blank">
+                              <picture>
+                                 <source srcset="img/featured/big-potatos.avif" type="image/avif">
+                                 <img src="img/featured/big-potatos.jpg" alt="fresh big potatos" title="fresh big potatos">
+                              </picture>
+                           </a>
+                        </div>
+                        <div class="card__info card__info--small-card">
+                           <div class="card__text">
+                              <h3 class="card__title card__title--small-card"><a href="#" target="_blank">Big Potatos</a></h3>
+                              <div class="card__price">
+                                 <span>$14.99</span>
+                              </div>
+                              <div class="card__rating">
+                                 <img src="img/icons-featured/stars.svg" alt="rating stars">
+                              </div>
+                           </div>
+                           <div class="card__additional additional-info">
+                              <button class="additional-info__icon-cart icon" type="button">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                    <path d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </button>
+                              <a class="additional-info__icon-heart icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M9.9996 17.5453C-6.66672 8.33354 4.99993 -1.66646 9.9996 4.65692C14.9999 -1.66646 26.6666 8.33354 9.9996 17.5453Z" stroke="currentColor" stroke-width="1.5" />
+                                 </svg>
+                              </a>
+                              <a class="additional-info__icon-eye icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card__item card__item--small-card">
+                        <div class="card__pic card__pic--small-card">
+                           <a class="card__link-pic" href="#" target="_blank">
+                              <picture>
+                                 <source srcset="img/featured/corn.avif" type="image/avif">
+                                 <img src="img/featured/corn.jpg" alt="fresh corn" title="fresh corn">
+                              </picture>
+                           </a>
+                        </div>
+                        <div class="card__info card__info--small-card">
+                           <div class="card__text">
+                              <h3 class="card__title card__title--small-card"><a href="#" target="_blank">Corn</a></h3>
+                              <div class="card__price">
+                                 <span>$14.99</span>
+                              </div>
+                              <div class="card__rating">
+                                 <img src="img/icons-featured/stars.svg" alt="rating stars">
+                              </div>
+                           </div>
+                           <div class="card__additional additional-info">
+                              <button class="additional-info__icon-cart icon" type="button">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                    <path d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </button>
+                              <a class="additional-info__icon-heart icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M9.9996 17.5453C-6.66672 8.33354 4.99993 -1.66646 9.9996 4.65692C14.9999 -1.66646 26.6666 8.33354 9.9996 17.5453Z" stroke="currentColor" stroke-width="1.5" />
+                                 </svg>
+                              </a>
+                              <a class="additional-info__icon-eye icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card__item card__item--small-card">
+                        <div class="card__pic card__pic--small-card">
+                           <a class="card__link-pic" href="#" target="_blank">
+                              <picture>
+                                 <source srcset="img/featured/fresh-cauliflower.avif" type="image/avif">
+                                 <img src="img/featured/fresh-cauliflower.jpg" alt="fresh fresh cauliflower" title="fresh fresh cauliflower">
+                              </picture>
+                           </a>
+                        </div>
+                        <div class="card__info card__info--small-card">
+                           <div class="card__text">
+                              <h3 class="card__title card__title--small-card"><a href="#" target="_blank">Fresh cauliflower</a></h3>
+                              <div class="card__price">
+                                 <span>$14.99</span>
+                              </div>
+                              <div class="card__rating">
+                                 <img src="img/icons-featured/stars.svg" alt="rating stars">
+                              </div>
+                           </div>
+                           <div class="card__additional additional-info">
+                              <button class="additional-info__icon-cart icon" type="button">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                    <path d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </button>
+                              <a class="additional-info__icon-heart icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M9.9996 17.5453C-6.66672 8.33354 4.99993 -1.66646 9.9996 4.65692C14.9999 -1.66646 26.6666 8.33354 9.9996 17.5453Z" stroke="currentColor" stroke-width="1.5" />
+                                 </svg>
+                              </a>
+                              <a class="additional-info__icon-eye icon" href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 3.54102C3.75 3.54102 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54102 10 3.54102V3.54102Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="featured__column card featured__column--hot-sale">
+                     <div class="card__highlights discount">
+                        <a class="discount__link" href="#" target="_blank">
+                           <picture class="discount__pic">
+                              <source src="img/featured/hot-sale.avif" type="image/avif">
+                              <img src="img/featured/hot-sale.jpg" alt="discounts on products during hot sale">
+                           </picture>
+                        </a>
+                        <div class="discount__body discount__body--hot-sale">
+                           <span class="discount__text discount__text--uppercase">Hot Sale</span>
+                           <span class="discount__size discount__size--black">
+                              <strong>Save 37%</strong> on </span>
+                           <span class="discount__size discount__size--black">Every Order</span>
+                           <button class="discount__button" type="button">
+                              <span>Shop Now</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 15" fill="none">
+                                 <path d="M16 7.50049H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                 <path d="M9.94995 1.47559L16 7.49959L9.94995 13.5246" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="page__flora flora">
+            <div class="flora__container">
+               <div class="flora__body grid-flora">
+                  <div class="grid-flora__item">
+                     <a class="grid-flora__link" href="#" target="_blank">
+                        <picture class="grid-flora__pic">
+                           <source src="img/flora/enchanted-petals.avif" type="images/avif">
+                           <img src="img/flora/enchanted-petals.jpg" alt="bouquet of beautiful enchanted petals flowers" title="bouquet of enchanted petals flowers">
+                        </picture>
+                     </a>
+                     <div class="grid-flora__content">
+                        <div class="grid-flora__text">
+                           <a href="#" target="_blank">
+                              <h3>Enchanted Petals </h3>
+                           </a>
+                           <span>70 Euro</span>
+                        </div>
+                        <div class="grid-flora__icons">
+                           <a href="#">
+                              <img src="img/icons-flora/heart.svg" alt="heart">
+                           </a>
+                           <button class="grid-flora__cart" type="button">
+                              <img src="img/icons-flora/cart.svg" alt="cart">
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="grid-flora__title">
+                     <h2>Catalog of Floral Delights for Every Occasion</h2>
+                  </div>
+                  <div class="grid-flora__item">
+                     <a class="grid-flora__link" href="#" target="_blank">
+                        <picture class="grid-flora__pic">
+                           <source src="img/flora/whispering-meadows.avif" type="images/avif">
+                           <img src="img/flora/whispering-meadows.jpg" alt="bouquet of beautiful whispering meadows flowers" title="bouquet of whispering meadows flowers">
+                        </picture>
+                     </a>
+                     <div class="grid-flora__content">
+                        <div class="grid-flora__text">
+                           <a href="#" target="_blank">
+                              <h3>Whispering Meadows</h3>
+                           </a>
+                           <span>45 Euro</span>
+                        </div>
+                        <div class="grid-flora__icons">
+                           <a href="#">
+                              <img src="img/icons-flora/heart.svg" alt="heart">
+                           </a>
+                           <button class="grid-flora__cart" type="button">
+                              <img src="img/icons-flora/cart.svg" alt="cart">
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="grid-flora__item">
+                     <a class="grid-flora__link" href="#" target="_blank">
+                        <picture class="grid-flora__pic">
+                           <source src="img/flora/serene-bliss .avif" type="images/avif">
+                           <img src="img/flora/serene-bliss .jpg" alt="bouquet of beautiful serene bliss flowers" title="bouquet of serene bliss flowers">
+                        </picture>
+                     </a>
+                     <div class="grid-flora__content">
+                        <div class="grid-flora__text">
+                           <a href="#" target="_blank">
+                              <h3>Serene Bliss</h3>
+                           </a>
+                           <span>60 Euro</span>
+                        </div>
+                        <div class="grid-flora__icons">
+                           <a href="#">
+                              <img src="img/icons-flora/heart.svg" alt="heart">
+                           </a>
+                           <button class="grid-flora__cart" type="button">
+                              <img src="img/icons-flora/cart.svg" alt="cart">
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="grid-flora__item">
+                     <a class="grid-flora__link" href="#" target="_blank">
+                        <picture class="grid-flora__pic">
+                           <source src="img/flora/floral-harmony.avif" type="images/avif">
+                           <img src="img/flora/floral-harmony.jpg" alt="bouquet of beautiful floral harmony flowers" title="bouquet of floral harmony flowers">
+                        </picture>
+                     </a>
+                     <div class="grid-flora__content">
+                        <div class="grid-flora__text">
+                           <a href="#" target="_blank">
+                              <h3>Floral Harmony</h3>
+                           </a>
+                           <span>80 Euro</span>
+                        </div>
+                        <div class="grid-flora__icons">
+                           <a href="#">
+                              <img src="img/icons-flora/heart.svg" alt="heart">
+                           </a>
+                           <button class="grid-flora__cart" type="button">
+                              <img src="img/icons-flora/cart.svg" alt="cart">
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="grid-flora__item">
+                     <a class="grid-flora__link" href="#" target="_blank">
+                        <picture class="grid-flora__pic">
+                           <source src="img/flora/springtime-serenade.avif" type="images/avif">
+                           <img src="img/flora/springtime-serenade.jpg" alt="bouquet of beautiful springtime serenade flowers" title="bouquet of springtime serenade flowers">
+                        </picture>
+                     </a>
+                     <div class="grid-flora__content">
+                        <div class="grid-flora__text">
+                           <a href="#" target="_blank">
+                              <h3>Springtime Serenade</h3>
+                           </a>
+                           <span>65 Euro</span>
+                        </div>
+                        <div class="grid-flora__icons">
+                           <a href="#">
+                              <img src="img/icons-flora/heart.svg" alt="heart">
+                           </a>
+                           <button class="grid-flora__cart" type="button">
+                              <img src="img/icons-flora/cart.svg" alt="cart">
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="grid-flora__item">
+                     <a class="grid-flora__link" href="#" target="_blank">
+                        <picture class="grid-flora__pic">
+                           <source src="img/flora/blooming-splendor.avif" type="images/avif">
+                           <img src="img/flora/blooming-splendor.jpg" alt="bouquet of beautiful blooming splendor flowers" title="bouquet of blooming splendor flowers">
+                        </picture>
+                     </a>
+                     <div class="grid-flora__content">
+                        <div class="grid-flora__text">
+                           <a href="#" target="_blank">
+                              <h3>Blooming Splendor</h3>
+                           </a>
+                           <span>50 Euro</span>
+                        </div>
+                        <div class="grid-flora__icons">
+                           <a href="#">
+                              <img src="img/icons-flora/heart.svg" alt="heart">
+                           </a>
+                           <button class="grid-flora__cart" type="button">
+                              <img src="img/icons-flora/cart.svg" alt="cart">
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="grid-flora__item grid-flora__item--one-cell">
+                     <button class="grid-flora__button" type="button">
+                        <div class="grid-flora__body-button">
+                           <span class="grid-flora__button-title">Open More</span>
+                           <img src="img/icons-flora/flora-arrow.svg" alt="arrow">
+                        </div>
+                     </button>
+                  </div>
+               </div>
+            </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>
