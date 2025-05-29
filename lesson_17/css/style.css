@@ -81,7 +81,7 @@
    background-color: #000;
    position: absolute;
    left: 0;
-   transition: all 0.4s ease;
+   transition: all 0.6s ease;
 }
 .header__burger > span {
    display: block;
@@ -129,18 +129,18 @@
    }
    .menu-open .header__burger span {
       transform: rotate(45deg);
-      transition: all 0.4s ease;
+      transition: all 0.6s ease;
    }
    .menu-open .header__burger::before {
       transform: rotate(-45deg);
       left: 13px;
       top: 4px;
-      transition: all 0.4s ease;
+      transition: all 0.6s ease;
    }
    .menu-open .header__burger::after {
       transform: rotate(-45deg);
       left: 1px;
-      transition: all 0.4s ease;
+      transition: all 0.6s ease;
    }
    .header__menu {
       position: fixed;
@@ -308,8 +308,8 @@
    pointer-events: all;
    display: inline-flex;
    column-gap: 12px;
-   transition: background-color 0.4s ease;
-   transition: border-color 0.4s ease;
+   transition: background-color 0.5s ease;
+   transition: border-color 0.5s ease;
 }
 .discount__button > span {
    color: #00b207;
@@ -317,30 +317,48 @@
    font-weight: 600;
    line-height: 1.2;
    white-space: nowrap;
-   transition: color 0.4s ease;
+   transition: color 0.5s ease;
 }
 .discount__button > svg {
    width: 15px;
    height: 12.049px;
    color: #00b207;
    align-self: center;
-   transition: color 0.4s ease;
+   transition: color 0.5s ease;
 }
 
 @media (any-hover: hover), (pointer: fine) {
    .discount:hover .discount__button {
       border-color: #00b207;
-      transition: border-color 0.4s ease;
+      transition: border-color 0.5s ease;
    }
    .discount__button:hover {
       background-color: #00b207;
-      transition: background-color 0.4s ease;
+      transition: background-color 0.5s ease;
    }
    .discount__button:hover > span {
       color: #fff;
-      transition: color 0.4s ease;
+      transition: color 0.5s ease;
    }
    .discount__button:hover > svg {
+      color: #fff;
+      transition: color 0.5s ease;
+   }
+}
+@media (any-hover: none), (pointer: coarse) {
+   .discount__button:active .discount__button {
+      border-color: #00b207;
+      transition: border-color 0.4s ease;
+   }
+   .discount__button:active {
+      background-color: #00b207;
+      transition: background-color 0.4s ease;
+   }
+   .discount__button:active > span {
+      color: #fff;
+      transition: color 0.4s ease;
+   }
+   .discount__button:active > svg {
       color: #fff;
       transition: color 0.4s ease;
    }
@@ -463,6 +481,25 @@
    .additional-info__icons {
       opacity: 1;
       visibility: visible;
+   }
+   .card__item:active {
+      border-color: #2c742f;
+      box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+   }
+   .card__item:active .card__cart {
+      background-color: #00b207;
+   }
+   .card__item:active .card__cart > svg {
+      color: #fff;
+   }
+   .additional-info__icon-heart:active,
+   .additional-info__icon-eye:active {
+      background-color: #00b207;
+      border-color: #00b207;
+   }
+   .additional-info__icon-heart:active svg,
+   .additional-info__icon-eye:active svg {
+      color: #fff;
    }
 }
 @media (any-hover: hover), (pointer: fine) {
@@ -594,7 +631,7 @@
    position: absolute;
    bottom: 0;
    left: 0;
-   padding: 10px 10px 22px 12px;
+   padding: 12px 10px 22px 12px;
    opacity: 0;
    visibility: hidden;
    transition: all 0.4s ease;
@@ -623,6 +660,23 @@
       opacity: 1;
       visibility: visible;
       transition: all 0.4s ease;
+   }
+}
+@media (any-hover: none), (pointer: coarse) {
+   .card__additional {
+      position: relative;
+      padding: 0;
+      opacity: 1;
+      visibility: visible;
+      gap: 5px;
+   }
+   .card__info--small-card {
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+   }
+   .additional-info__icon-cart {
+      order: 3;
    }
 }
 
@@ -724,6 +778,20 @@
    transition: color 0.4s ease;
 }
 
+@media (any-hover: none), (pointer: coarse) {
+   .grid-flora__body-button:active {
+      background-color: #dbccba;
+      transition: background-color 0.4s ease;
+   }
+   .grid-flora__body-button:active .grid-flora__button {
+      background-color: #f8f3ec;
+      transition: background-color 0.4s ease;
+   }
+   .grid-flora__body-button:active .grid-flora__title-button {
+      color: #8c7e6d;
+      transition: color 0.4s ease;
+   }
+}
 @media (any-hover: hover), (pointer: fine) {
    .grid-flora__body-button:hover {
       background-color: #dbccba;
