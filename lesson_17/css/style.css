@@ -20,13 +20,13 @@
 .header {
    background-color: #f8f3ec;
    font-family: "KoPub Batang", "Arial", sans-serif;
+   padding-top: 30px;
+   padding-bottom: 30px;
 }
 .header__container {
    max-width: 1230px;
 }
 .header__body {
-   padding-top: 30px;
-   padding-bottom: 30px;
    display: flex;
    justify-content: space-between;
    gap: 30px;
@@ -768,4 +768,19 @@
    .grid-flora__item--one-cell {
       justify-self: center;
    }
+}
+
+/* ========== FOOTER =========== */
+
+.footer {
+   font-family: "Poppins", Arial, sans-serif;
+   color: #00b207;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   font-size: 30px;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+.footer__container {
+   max-width: 1350px;
 }
