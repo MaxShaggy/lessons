@@ -9,16 +9,58 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Carme:wght@400&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
-   <title>Homework-15</title>
+   <title>Homework-17</title>
 </head>
 
 <body>
    <div class="wrapper">
       <header class="header">
-         <div class="header__container"></div>
+         <div class="header__container">
+            <div class="header__body">
+               <h1 class="header__title">Homework-17</h1>
+               <ul class="header__menu">
+                  <li class="header__link">
+                     <button class="header__burger">
+                        <span></span>
+                     </button>
+                  </li>
+                  <li class="header__link">
+                     <a href="#featured">Featured</a>
+                     <svg fill="#000000" width="22px" height="22px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                           <path d="M20,10C22,13 17,22 15,22C13,22 13,21 12,21C11,21 11,22 9,22C7,22 2,13 4,10C6,7 9,7 11,8V5C5.38,8.07 4.11,3.78 4.11,3.78C4.11,3.78 6.77,0.19 11,5V3H13V8C15,7 18,7 20,10Z"></path>
+                        </g>
+                     </svg>
+                  </li>
+                  <li class="header__link">
+                     <a href="#flora">Flora</a>
+                     <svg height="20px" width="20px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="2.048"></g>
+                        <g id="SVGRepo_iconCarrier">
+                           <style type="text/css">
+                              .st0 {
+                                 fill: #000000;
+                              }
+                           </style>
+                           <g>
+                              <path class="st0" d="M137.542,212.252c-8.77,12.118-14.043,26.836-14.043,42.895c0,40.566,32.858,73.449,73.432,73.449 c24.335,0,45.692-11.913,59.06-30.127c13.386,18.214,34.75,30.127,59.052,30.127c40.608,0,73.441-32.883,73.441-73.449 c0-16.058-5.274-30.776-14.027-42.895c29.279-9.658,50.513-36.881,50.513-69.385c0-40.566-32.85-73.433-73.433-73.433 c-7.774,0-15.137,1.522-22.114,3.718C329.235,32.718,296.493,0,255.991,0c-40.475,0-73.259,32.718-73.416,73.153 c-6.976-2.196-14.339-3.718-22.105-3.718c-40.592,0-73.441,32.866-73.441,73.433C87.029,175.371,108.263,202.594,137.542,212.252z M255.991,141.624c21.119,0,38.239,17.104,38.239,38.214c0,21.101-17.12,38.205-38.239,38.205 c-21.101,0-38.238-17.104-38.238-38.205C217.754,158.728,234.891,141.624,255.991,141.624z"></path>
+                              <path class="st0" d="M373.479,356.452c-48.053,0.33-90.602,23.389-117.61,58.904c-27.469-35.154-70.331-57.637-118.392-57.325 c-10.589,0.074-20.905,1.259-30.859,3.439c0,0.856-0.05,1.704-0.041,2.576c0.551,82.251,67.674,148.502,149.942,147.951 c82.269-0.552,148.511-67.682,147.96-149.942c-0.009-0.864-0.066-1.72-0.09-2.574C394.417,357.439,384.067,356.386,373.479,356.452 z"></path>
+                           </g>
+                        </g>
+                     </svg>
+                  </li>
+               </ul>
+               <button class="header__burger">
+                  <span></span>
+               </button>
+            </div>
+         </div>
       </header>
       <main class="page">
-         <div class="page__featured featured">
+         <div class="page__featured featured" id="featured">
             <div class="featured__container">
                <div class="featured__block-title">
                   <a class="featured__link-title" href="#" target="_blank">Products</a>
@@ -614,7 +656,7 @@
                </div>
             </div>
          </div>
-         <div class="page__flora flora">
+         <div class="page__flora flora" id="flora">
             <div class="flora__container">
                <div class="flora__body grid-flora">
                   <div class="grid-flora__item">
@@ -781,6 +823,7 @@
          </div>
       </footer>
    </div>
+   <script src="js/script.js"></script>
 </body>
 
 </html>
