@@ -257,6 +257,7 @@
 }
 .discount {
    position: relative;
+   aspect-ratio: 248 / 339;
 }
 .discount__link {
    position: absolute;
@@ -576,13 +577,6 @@
       width: 80px;
    }
 }
-@media (max-width: 546px) {
-   .discount {
-      aspect-ratio: 248 / 339;
-   }
-}
-
-/* =============== HIGHLIGHTS ================ */
 
 .featured__highlights {
    padding-top: 12px;
