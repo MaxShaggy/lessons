@@ -529,13 +529,13 @@
    justify-self: self-start;
    padding: 20px 20px 20px 0;
 }
-.grid-flora__button {
+.grid-flora__body-button {
    will-change: background-color;
    border: 1px solid #dbccba;
    padding: 10px;
    transition: background-color 0.4s ease;
 }
-.grid-flora__body-button {
+.grid-flora__button {
    will-change: background-color;
    background: #dbccba;
    padding: 9px 30px;
@@ -553,15 +553,15 @@
 }
 
 @media (any-hover: hover), (pointer: fine) {
-   .grid-flora__button:hover {
+   .grid-flora__body-button:hover {
       background-color: #dbccba;
       transition: background-color 0.4s ease;
    }
-   .grid-flora__button:hover .grid-flora__body-button {
+   .grid-flora__body-button:hover .grid-flora__button {
       background-color: #f8f3ec;
       transition: background-color 0.4s ease;
    }
-   .grid-flora__button:hover .grid-flora__title-button {
+   .grid-flora__body-button:hover .grid-flora__title-button {
       color: #8c7e6d;
       transition: color 0.4s ease;
    }
