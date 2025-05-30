@@ -179,6 +179,15 @@
       fill: #887f74;
    }
 }
+@media (max-width: 426px) {
+   .header__title {
+      font-size: 30px;
+   }
+   .header__menu {
+      height: calc(100% - 90px);
+      top: 90px;
+   }
+}
 
 /* ============= FEATURED ============ */
 
@@ -837,6 +846,10 @@
    }
    .grid-flora__item--one-cell {
       justify-self: center;
+   }
+   .grid-flora__title {
+      font-size: 30px;
+      padding-top: 10px;
    }
 }
 
