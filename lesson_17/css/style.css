@@ -20,8 +20,8 @@
 .header {
    background-color: #f8f3ec;
    font-family: "KoPub Batang", "Arial", sans-serif;
-   padding-top: 30px;
-   padding-bottom: 30px;
+   padding-top: 32px;
+   padding-bottom: 32px;
 }
 .header__container {
    max-width: 1230px;
@@ -254,6 +254,11 @@
       padding-bottom: 10px;
    }
 }
+@media (max-width: 321px) {
+   .featured__title {
+      font-size: 25px;
+   }
+}
 
 /* ================= PRODUCTS =================== */
 
@@ -267,6 +272,7 @@
 .discount {
    position: relative;
    aspect-ratio: 248 / 339;
+   height: 100%;
 }
 .discount__link {
    position: absolute;
@@ -667,7 +673,7 @@
 }
 @media (any-hover: none), (pointer: coarse) {
    .card__additional {
-      position: relative;
+      position: static;
       padding: 0;
       opacity: 1;
       visibility: visible;
