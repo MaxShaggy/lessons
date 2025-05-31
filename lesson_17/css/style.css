@@ -29,6 +29,7 @@
 .header__body {
    display: flex;
    justify-content: space-between;
+   align-items: center;
    gap: 30px;
 }
 .header__title {
@@ -44,6 +45,8 @@
 .header__link {
    transition: color 0.4s ease;
    position: relative;
+}
+.header__link a {
    display: flex;
    gap: 5px;
    align-items: center;
