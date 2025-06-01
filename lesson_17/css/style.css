@@ -790,6 +790,10 @@
    line-height: 1.37;
    transition: color 0.4s ease;
 }
+.grid-flora__button-heart img,
+.grid-flora__cart img {
+   will-change: transform;
+}
 
 @media (any-hover: none), (pointer: coarse) {
    .grid-flora__body-button:active {
@@ -821,6 +825,21 @@
    .grid-flora__text a:hover h3 {
       color: #8b4513;
       transition: color 0.4s ease;
+   }
+   .grid-flora__button-heart,
+   .grid-flora__cart {
+      perspective: 400px;
+      perspective-origin: center;
+      transition: transform 1s ease;
+   }
+   .grid-flora__button-heart:hover img,
+   .grid-flora__cart:hover img {
+      transform: rotate3d(0, 60, 0, 180deg);
+      transition: transform 1s ease;
+   }
+   .grid-flora__button-heart img,
+   .grid-flora__cart img {
+      transition: transform 1s ease;
    }
 }
 @media (max-width: 1230px) {
