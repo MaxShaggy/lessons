@@ -794,6 +794,14 @@
 .grid-flora__cart img {
    will-change: transform;
 }
+.grid-flora__button-heart img {
+   width: 22px;
+   height: 21px;
+}
+.grid-flora__cart img {
+   width: 22px;
+   height: 22px;
+}
 
 @media (any-hover: none), (pointer: coarse) {
    .grid-flora__body-button:active {
