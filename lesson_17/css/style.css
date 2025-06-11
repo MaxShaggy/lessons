@@ -162,7 +162,7 @@
       align-items: center;
       gap: 30px;
       padding-top: 100px;
-      padding-bottom: 50px;
+      padding-bottom: 40px;
       font-size: 30px;
       color: #887f74;
       overflow: auto;
@@ -187,8 +187,12 @@
    }
 }
 @media (max-width: 426px) {
+   .header__body {
+      gap: 30px;
+   }
    .header__title {
       font-size: 30px;
+      flex: 1 0 220px;
    }
    .header__menu {
       height: calc(100% - 90px);
@@ -278,8 +282,11 @@
 }
 .discount {
    position: relative;
-   aspect-ratio: 248 / 339;
+   background: url(../img/no_image_available.avif) center / cover no-repeat;
    height: 100%;
+}
+.card__item-discount {
+   aspect-ratio: 248 / 339;
 }
 .discount__link {
    position: absolute;
@@ -605,7 +612,8 @@
    padding-top: 12px;
    padding-bottom: 30px;
    display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(min(312px, 100%), 1fr));
+   grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+   grid-auto-rows: 1fr;
    column-gap: 24px;
    row-gap: 16px;
 }
@@ -707,7 +715,7 @@
 }
 .flora__body {
    display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(min(380px, 100%), 1fr));
+   grid-template-columns: repeat(auto-fill, minmax(min(286px, 100%), 1fr));
    gap: 30px;
 }
 .flora__container {
